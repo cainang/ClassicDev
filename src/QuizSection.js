@@ -117,12 +117,15 @@ const QuizSection = ({category}) => {
             cat = 11;
         }
 
-        let url = "https://opentdb.com/api.php?amount=10&category="+cat+"&difficulty=medium&type=multiple";
-        
+        //let url = "https://opentdb.com/api.php?amount=10&category="+cat+"&difficulty=medium&type=multiple";
+        let url = 'http://localhost:3333/quests'
         let source = axios.CancelToken.source();
 
         axios.get( url,
-                   {cancelToken: source.token} 
+                   {cancelToken: source.token},
+                {
+                    dificudade: 'hard'
+                   }
                    )
         .then(response => {
                 
