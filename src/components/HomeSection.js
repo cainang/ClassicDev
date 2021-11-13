@@ -1,7 +1,7 @@
 import React, { useState, useRef, useEffect } from 'react';
-import movieIcon from './design/movie-icon.svg';
-import musicIcon from './design/music-icon.svg';
-import booksIcon from './design/books-icon.svg';
+import movieIcon from './../design/movie-icon.svg';
+import musicIcon from './../design/music-icon.svg';
+import booksIcon from './../design/books-icon.svg';
 import { Redirect } from 'react-router-dom';
 
 const HomeSection = () => {
@@ -38,50 +38,50 @@ const HomeSection = () => {
 
 
     return <section className = "block__home__section">
-                <h3 ref={homeRef} tabIndex="0">Choose one from the categories below and see how many questions you can answer correctly out of 10 questions!</h3>
+                <h3 ref={homeRef} tabIndex="0">Escolha uma das dificuldades abaixo e veja quantas perguntas você pode responder corretamente em 10 perguntas!</h3>
                 <div className="block__home__section__figures">
                     <label className="block__home__section__figures-input"  >
                         <input type="radio" 
                                name="category" 
-                               checked={selected === "movie"} 
-                               value={"movie"} 
+                               checked={selected === "Iniciante"} 
+                               value={"Iniciante"} 
                                aria-label="category movie"
                                onChange={onChange}
                                />
                         <figure className="block__home__section__figures-input-fake">
                             <img src={movieIcon} alt="movie category" />
                         </figure>
-                        <figcaption>MOVIE</figcaption>
+                        <figcaption>Iniciante</figcaption>
                     </label>
                     <label className="block__home__section__figures-input" >
                         <input type="radio" 
                                name="category" 
-                               checked={selected === "music"} 
-                               value={"music"}  
+                               checked={selected === "Intemediario"} 
+                               value={"Intemediario"}  
                                aria-label="category music"
                                onChange={onChange} 
                                />
                         <figure className="block__home__section__figures-input-fake">
                           <img src={musicIcon} alt="music category" />
                         </figure>
-                        <figcaption>MUSIC</figcaption>
+                        <figcaption>Intermediário</figcaption>
                     </label>
                     <label className="block__home__section__figures-input" >
                         <input type="radio" 
                                name="category" 
-                               checked={selected === "books"} 
-                               value={"books"}  
+                               checked={selected === "Avançado"} 
+                               value={"Avançado"}  
                                aria-label="category books"
                                onChange={onChange}
                                />
                         <figure className="block__home__section__figures-input-fake">
-                          <img src={booksIcon} alt="books category" />
+                          <img src={booksIcon} alt="books category" style={{height: '11em', paddingInline: '2em'}} />
                         </figure>
-                        <figcaption>BOOKS</figcaption>
+                        <figcaption>Avançado</figcaption>
                     </label>
                 </div>
                 <button className="block__home__section__submit" aria-label="Start Quiz" onClick={start}>
-                    Start Quiz!
+                    Começar Quiz!
                 </button>
             </section>
 }

@@ -13,7 +13,7 @@
     align-items: center;
     width: 100vw;
     height: 100vh;
-    background-color: rgb(225,225,225, 0.75);
+    background-color: rgb(255 255 255 / 0.42);
     position: absolute;
     top:0;
 }
@@ -40,12 +40,12 @@
 }
 
 .block__modalContainer__dialogBox--container > h2 {
-    color: #C85876;
+    color: #123053;
     margin-bottom: 20px;
 }
 
 .block__modalContainer__dialogBox--container > h1 {
-    color: #C85876;
+    color: #123053;
     margin: 0;
 }
 
@@ -57,18 +57,18 @@
 .block__modalContainer--nav > button {
     width: 166px;
     height: 40px;
-    background-color: #EDA9A9;
+    background-color: #2b5c94;
     margin: 30px 10px 0 10px;
     border:none;
     border-radius: 40px;
     font-size: 0.7rem;
-    color: #3a3a3a;
+    color: #fff;
     font-weight: bold;
 }
 
 .block__modalContainer--nav > button:hover,
 .block__modalContainer--nav > button:focus {
-    background-color: #BE3459;
+    background-color: #123053;
     color: #ffffff;
     cursor: pointer;
 }
@@ -84,7 +84,7 @@
 
 .block__modalContainer--nav > button:first-of-type:hover,
 .block__modalContainer--nav > button:first-of-type:focus {
-    background-color: #BE3459;
+    background-color: #123053;
     color: #fff;
     cursor: pointer;
 }

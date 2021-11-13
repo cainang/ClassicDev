@@ -37,7 +37,7 @@ function Sidebar({ isOpen, onClose }) {
                         <Link to="/" 
                               className="Sidebar__menu-link"
                               aria-label="Go to home">
-                                  Home
+                                  Início
                             <i className="material-icons" style={{position:"absolute", top: "12px", marginLeft:"20px", marginRight: "20px" }}>
                                 home
                             </i>
@@ -47,7 +47,7 @@ function Sidebar({ isOpen, onClose }) {
                         <Link to="/about" 
                               className="Sidebar__menu-link"
                               aria-label="Go to about game">
-                                  About Game
+                                  Sobre o jogo
                             <i className="material-icons" style={{position:"absolute", top: "12px", marginLeft:"20px", marginRight: "20px" }}>
                                 info
                             </i>
@@ -57,7 +57,7 @@ function Sidebar({ isOpen, onClose }) {
                         <Link to="/stats" 
                               className="Sidebar__menu-link"
                               aria-label="Go to game stats">
-                                  Game Stats
+                                  Estatistica do Quiz
                             <i className="material-icons" style={{position:"absolute", top: "12px", marginLeft:"20px", marginRight: "20px" }}>
                                 pie_chart
                             </i>

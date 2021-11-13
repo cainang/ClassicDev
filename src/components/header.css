@@ -22,7 +22,7 @@
 .block__header--nav--link {
     text-decoration: none;
     font-size: 16px;
-    color: #C85876;
+    color: #f7ad29;
     padding: 5px;
     font-weight: bold;
 }
@@ -35,12 +35,12 @@
 }
 
 .block__header--nav > h4 {
-    color: #737373;
+    color: #fff;
     margin-right: 6px;
 }
 
 .block__header--nav--link:hover {
-    color: #BE3459;
+    color: #f7ad29;
 }
 
 .block__header-home > figure > .block__header__logo {
@@ -56,12 +56,12 @@
 .block__header--nav--link:focus-within,
 .Header__menu-button:focus-within,
 .block__header-home__Header__menu-button:focus-within {
-    outline: 1px dashed #D56F85;
+    outline: 1px dashed #f7ad29;
 }
 
 .block__header-home__Header__menu-button {
     background-color: transparent;
-    color: #D56F85;
+    color: #f7ad29;
     border: none;
     height: 40px;
     width: 40px;
@@ -73,7 +73,7 @@
 
 .Header__menu-button {
     background-color: transparent;
-    color: #D56F85;
+    color: #f7ad29;
     border: none;
     display: flex;
     align-items: center;

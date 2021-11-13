@@ -45,7 +45,7 @@ const QuestionBox = ({ data,
             <div className="block__section__changePage">
                 
                     <button className="block__section__prev" 
-                            aria-label="previous question"
+                            aria-label="Questão Anterior"
                             onClick={prevQuestion} 
                             disabled={currentPage === 1 ? "disabled" : null }>
                         <MdNavigateBefore 
@@ -55,14 +55,14 @@ const QuestionBox = ({ data,
                                     transform: "translate(-100%, -50%)"
                                     }} 
                         />
-                        Prev Question
+                        Questão Anterior
                     </button>
                
                 <button ref={nextButtonRef} className="block__section__next" 
-                        aria-label={currentPage === 10 ? "Check Result" : "Next Question"}
+                        aria-label={currentPage === 10 ? "Ver Resultado" : "Proxima Questão"}
                         onClick={ selected ? currentPage === 10 ? checkAnswer : nextQuestion : null }
                         >
-                    {currentPage === 10 ? "Check Result" : "Next Question"}
+                    {currentPage === 10 ? "Ver Resultado" : "Proxima Questão"}
                     <MdNavigateNext 
                         size="24px" 
                         style={{ position: "absolute",

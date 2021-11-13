@@ -48,7 +48,7 @@ class Donut extends  React.PureComponent{
                 },
 
                 labels: ['Incorrect', 'Correct'],   // labels
-                colors: ['#dddddd', '#D56F85'],     // colors
+                colors: ['#dddddd', '#f7ad29'],     // colors
 
                 // https://apexcharts.com/docs/options/datalabels/
                 dataLabels: {

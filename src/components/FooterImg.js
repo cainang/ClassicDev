@@ -1,5 +1,5 @@
 import React from 'react';
-import FooterImg from './design/footer-ornament.svg';
+import FooterImg from './../design/footer-ornament.svg';
 
 class FooterOrnament extends React.PureComponent {
     render() {

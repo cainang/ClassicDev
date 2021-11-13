@@ -1,10 +1,10 @@
 import React from 'react';
 import { Route, BrowserRouter as Router } from "react-router-dom";
 import './App.css';
-import Home from "./Home/Home";
+import Home from "./pages/Home/Home";
 import Quiz from "./QuizPage";
-import About from './About';
-import Stats from './Stats';
+import About from './pages/About/About';
+import Stats from './components/Stats';
 import "react-loader-spinner/dist/loader/css/react-spinner-loader.css";
 
 function App() {

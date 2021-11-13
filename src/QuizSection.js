@@ -3,7 +3,7 @@ import axios from 'axios';
 import Loader from 'react-loader-spinner';
 import { playedGames$, updatePlayedGames, correctPercentage$, correctAnswers$, incorrectAnswers$, updateCorrectAnswersStat, updateIncorrectAnswersStat, updateCorrectPercentage } from './store';
 import QuestionBox from './QuestionsBox';
-import ResultModal from './ResultModal';
+import ResultModal from './components/ResultModal';
 
 const QuizSection = ({category}) => {
 
@@ -118,15 +118,10 @@ const QuizSection = ({category}) => {
         }
 
         //let url = "https://opentdb.com/api.php?amount=10&category="+cat+"&difficulty=medium&type=multiple";
-        let url = 'http://localhost:3333/quests'
+        let url = 'https://classicdev-backend.herokuapp.com/quests'
         let source = axios.CancelToken.source();
 
-        axios.get( url,
-                   {cancelToken: source.token},
-                {
-                    dificudade: 'hard'
-                   }
-                   )
+        axios.get( url, {cancelToken: source.token}, {dificudade: 'Iniciante'})
         .then(response => {
                 
                 let copyData = [...response.data.results];
@@ -272,7 +267,7 @@ const QuizSection = ({category}) => {
                 {loaderActive ? 
                     <Loader className="loader"
                         type="Oval"
-                        color="#D56F85"
+                        color="#f7ad29"
                         height={100}
                         width={100}
                         timeout={5000}
@@ -280,7 +275,7 @@ const QuizSection = ({category}) => {
                     /> 
                         : 
                     <>
-                    <h4>CATEGORY: {category.toUpperCase()}</h4>
+                    <h4>Dificuldade: {category}</h4>
                     <h5>{currentPage} / 10</h5>
                     {currentData.map((data, index) => {
                         const entities = {

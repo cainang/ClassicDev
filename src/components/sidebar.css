@@ -1,7 +1,7 @@
   
   .Sidebar {
     width: 350px;
-    background-color: #C85876;
+    background-color: #f7ad29;
     position: absolute;
     right: 0;
     top: 0;
@@ -10,7 +10,7 @@
     transform: translateX(0);
     transition: all 0.2s linear;
     z-index: 99999;
-    background-image: url("./design/question-icon.svg");
+    background-image: url("./../design/question-icon.svg");
     background-repeat: no-repeat;
     background-position: bottom;
     background-size: contain;
@@ -80,7 +80,7 @@
   }
   
   .Sidebar__mask:focus-within {
-    box-shadow: inset 0px 0px 0px 4px #C85876;
+    box-shadow: inset 0px 0px 0px 4px #f7ad29;
   }
   
   .Sidebar__mask-button {

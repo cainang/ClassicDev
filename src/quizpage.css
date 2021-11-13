@@ -16,7 +16,7 @@
 
 .block__section > h4 {
     margin-bottom: 24px;
-    color: #C85876;
+    color: #f7ad29;
 }
 
 .block__section > h5 {
@@ -37,10 +37,7 @@
     width: 65%;
     height: 90px;
     font-weight: bold;
-}
-
-.block__section__questionBox > h3:focus {
-    color: #D56F85;
+    color: #fff;
 }
 
 .block__section__questionBox-answers {
@@ -61,7 +58,7 @@
     position: relative;
     line-height: 1.5rem;
     text-align: left;
-    background: linear-gradient(to right, #F7E4E8 50%, rgb(243, 243, 243)  50%);
+    background: linear-gradient(to right, #ffd996 50%, rgb(243, 243, 243)  50%);
     background-size: 201% 99%;
     background-position: right bottom;
     transition: all 0.2s ease-in;
@@ -85,7 +82,7 @@
     text-align: left;
     background: #F7E4E8 ;
     background-position: right bottom;
-    background: linear-gradient(to right, #F7E4E8 50%, #F7E4E8   50%);
+    background: linear-gradient(to right, #fdda9e 50%, #ffd996 50%);
     cursor: pointer;
 }
 
@@ -130,7 +127,7 @@
 
 .block__section__questionBox-answers-indiv:focus-within,
 .block__section__questionBox-answers-indiv-checked:focus-within  {
-    border: 1px dashed #D56F85;
+    border: 1px dashed #f7ad29;
     cursor: pointer;
 }
 
@@ -139,7 +136,7 @@
 .block__section__questionBox-answers-indiv > input[type="radio"]:hover ~ .block__section__questionBox-answers-indiv-fakedisplay::before
  {
     content: "radio_button_checked";
-    color: #D56F85;
+    color: #f7ad29;
 }
 
 .block__section__changePage {
@@ -147,6 +144,7 @@
     flex-flow: row wrap;
     justify-content: space-between;
     align-items: center;
+    z-index: 99;
 }
 
 .block__section__next {
@@ -154,15 +152,16 @@
     border: none;
     width: 200px;
     height: 40px;
-    color: #3a3a3a;
+    color: #fff;
     border-radius: 30px;
     font-size: 0.8rem;
-    background: linear-gradient(to right, #BE3459 50%, #EDA9A9 50%);
+    background: linear-gradient(to right, #415975 50%, #123053 50%);
     background-size: 201% 99%;
     background-position: right bottom;
     position: relative;
     transition: all 0.2s ease-in; 
     font-weight: bold;
+    border: solid 1px #f7ad29;
 }
 
 .block__section__next:hover {

@@ -1,11 +1,11 @@
 import React from 'react';
-import './Home/home.css'
+import './../pages/Home/home.css'
 
 class Footer extends React.PureComponent {
     render() {
         return <>
                     <footer className = "block__footer" >
-                         <p>Quiz Master by Devina A. Paramita Na | Frontend Utveckling, Helsingborg 2020</p>
+                         <p>Classic {'</Dev>'} | Fortaleza - CE {new Date().getFullYear()}</p>
                     </footer>
                </>
     }

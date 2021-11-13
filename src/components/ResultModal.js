@@ -61,7 +61,7 @@ const Create = ({ result,
                 {loadingLoader ? 
                     <Loader
                         type="Oval"
-                        color="#D56F85"
+                        color="#f7ad29"
                         height={100}
                         width={100}
                         timeout={2000}
@@ -79,21 +79,21 @@ const Create = ({ result,
                                       tabIndex="0"
                                       aria-label="Quiz result"
                                       aria-describedby="dialog1Desc">
-                                    <h2 >{result !== 0 ? "CONGRATULATION" : "SORRY!!"}</h2>
-                                    <h5 >You answered</h5>
+                                    <h2 >{result !== 0 ? "Parabéns 🎉" : "Sinto Muito 😢!!"}</h2>
+                                    <h5 >Você Acertou</h5>
                                     <h1 >{result}/10</h1>
-                                    <h5 >{result <= 1 ? "question correct" : "questions correct"}</h5>
+                                    <h5 >{result <= 1 ? "Questões Corretas" : "Questão Correta"}</h5>
                                     <span id="dialog1Desc" 
                                         role="textbox"
                                         
                                         >
-                                        { result !== 0 ? result > 1 ? "Congratulation, You answered" + result + "questions correct" : "Congratulation, You answered" + result + "question correct"
+                                        { result !== 0 ? result > 1 ? "Parabéns, Você Acertou" + result + "Questões Corretas" : "Parabéns, Você Acertou" + result + "Questão Correta"
                                             :
-                                        "Sorry, Your got" + result + "question correct" }
+                                        "Desculpe, Você Falhou" + result + "Questão Correta" }
                                     </span>
                                     <div role="menu" className="block__modalContainer--nav">
-                                        <button aria-label="play again" onClick={restartGame}>Play again</button>
-                                        <button aria-label="back to home" onClick={backToHome}>Back to home</button>
+                                        <button aria-label="play again" onClick={restartGame}>Jogar Novamente</button>
+                                        <button aria-label="back to home" onClick={backToHome}>Voltar para o Início</button>
                                     </div>
                                 </div>
                         </div>

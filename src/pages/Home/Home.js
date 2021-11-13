@@ -1,11 +1,11 @@
 import React, {useState} from 'react';
-import "../Home/home.css";
-import Header from "../Header";
+import "./home.css";
+import Header from "../../components/Header";
 import { Helmet, HelmetProvider } from 'react-helmet-async';
-import Footer from "../Footer";
-import HomeSection from "../HomeSection";
-import FooterImg from "../FooterImg";
-import Sidebar from "../Sidebar";
+import Footer from "../../components/Footer";
+import HomeSection from "../../components/HomeSection";
+import FooterImg from "../../components/FooterImg";
+import Sidebar from "../../components/Sidebar";
 
 const Home = () => {
 
@@ -14,7 +14,7 @@ const Home = () => {
     return  <>      
                 <HelmetProvider>
                     <Helmet >
-                        <title>Quiz Master - Home</title>
+                        <title>Classic {'</Dev>'}</title>
                     </Helmet>
                         <main className="block">
                             <Header page="home"

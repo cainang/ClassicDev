@@ -1,20 +1,21 @@
 import React, { useState } from 'react';
 import './quizpage.css';
 import { Helmet, HelmetProvider } from 'react-helmet-async';
-import FooterImg from './FooterImg';
-import Header from "./Header";
-import Footer from "./Footer";
+import FooterImg from './components/FooterImg';
+import Header from "./components/Header";
+import Footer from "./components/Footer";
 import QuizSection from "./QuizSection";
-import Sidebar from './Sidebar';
+import Sidebar from './components/Sidebar';
 
 const QuizPage = ({ location }) => {
+    console.log(location)
 
     const [sidebarIsOpen, updateSidebarIsOpen] = useState(false);
 
     return <>   
                 <HelmetProvider>
                     <Helmet>
-                        <title>Quiz Master - Category: {location.state.category}</title>
+                        <title>Classic {'</Dev>'} - Dificuldade: {location.state.category}</title>
                     </Helmet>
                         <main className="block" >
                             <Header page="quiz"
