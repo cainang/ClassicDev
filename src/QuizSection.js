@@ -110,7 +110,7 @@ const QuizSection = ({category}) => {
 
         //let url = "https://opentdb.com/api.php?amount=10&category="+cat+"&difficulty=medium&type=multiple";
         var params = encodeURI(category)
-        let url = 'http://localhost:3000/quests?dificudade=' + params;
+        let url = 'https://classicdev-backend.herokuapp.com/quests?dificudade=' + params;
         let source = axios.CancelToken.source();
 
         axios.get( url, {cancelToken: source.token})
