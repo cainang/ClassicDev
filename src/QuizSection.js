@@ -108,20 +108,12 @@ const QuizSection = ({category}) => {
         
         loadingSpinner();
 
-        let cat;
-        if(category === "music") {
-            cat = 12;
-        } else if (category === "books") {
-            cat = 10;
-        } else if (category === "movie") {
-            cat = 11;
-        }
-
         //let url = "https://opentdb.com/api.php?amount=10&category="+cat+"&difficulty=medium&type=multiple";
-        let url = 'https://classicdev-backend.herokuapp.com/quests'
+        var params = encodeURI(category)
+        let url = 'http://localhost:3000/quests?dificudade=' + params;
         let source = axios.CancelToken.source();
 
-        axios.get( url, {cancelToken: source.token}, {dificudade: 'Iniciante'})
+        axios.get( url, {cancelToken: source.token})
         .then(response => {
                 
                 let copyData = [...response.data.results];

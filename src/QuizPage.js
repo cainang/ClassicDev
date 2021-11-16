@@ -8,7 +8,6 @@ import QuizSection from "./QuizSection";
 import Sidebar from './components/Sidebar';
 
 const QuizPage = ({ location }) => {
-    console.log(location)
 
     const [sidebarIsOpen, updateSidebarIsOpen] = useState(false);
 
