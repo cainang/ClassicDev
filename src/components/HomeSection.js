@@ -74,7 +74,7 @@ const HomeSection = () => {
                                aria-label="category books"
                                onChange={onChange}
                                />
-                        <figure className="block__home__section__figures-input-fake">
+                        <figure className="block__home__section__figures-input-fake" id='servidoricon'>
                           <img src={booksIcon} alt="books category" style={{height: '11em', paddingInline: '2em'}} />
                         </figure>
                         <figcaption>Avançado</figcaption>

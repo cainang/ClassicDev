@@ -112,10 +112,6 @@ figcaption{
         width: 90%;
     }
 
-    .block__home__section__figures-input-fake > img {
-        width: 20vw;
-    }
-
     .block__home__section__figures-input-fake {
         margin: 10px;
     }
@@ -133,6 +129,12 @@ figcaption{
 
     .block__home__section__figures {
         flex-flow: column wrap;
+    }
+
+    #servidoricon img {
+        width: 7em;
+        height: 7em !important;
+        padding-inline: 1.4em !important;
     }
 
     .block__home__section__figures-input-fake > img {
