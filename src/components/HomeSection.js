@@ -57,7 +57,7 @@ const HomeSection = () => {
                         <input type="radio" 
                                name="category" 
                                checked={selected === "Intemediario"} 
-                               value={"Intemediario"}  
+                               value={"Intemediário"}  
                                aria-label="category music"
                                onChange={onChange} 
                                />
