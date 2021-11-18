@@ -113,7 +113,7 @@ const QuizSection = ({category}) => {
         let url = 'https://classicdev-backend.herokuapp.com/quests?dificudade=' + params;
         let source = axios.CancelToken.source();
 
-        axios.get( url, {cancelToken: source.token})
+        axios.get(url)
         .then(response => {
                 
                 let copyData = [...response.data.results];
