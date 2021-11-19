@@ -28,6 +28,7 @@ figcaption{
     justify-content: center;
     margin: 25px 0;
     position: relative;
+    z-index: 2;
 }
 
 .block__home__section__figures-input-fake {
