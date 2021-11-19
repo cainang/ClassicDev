@@ -9,15 +9,15 @@ class Header extends React.PureComponent {
 
         let renderHeader =  (
                             <>
-                            <Link to="/" aria-label="back to home">
                                 <figure>
-                                    <img 
-                                        src={Logo} 
-                                        alt="quiz master logo" 
-                                        className="block__header__logo" 
-                                    />
+                                    <Link to="/" className="block__header__logo" aria-label="back to home">
+                                        <img 
+                                            src={Logo} 
+                                            alt="quiz master logo" 
+                                            
+                                        />
+                                    </Link>
                                 </figure>
-                            </Link>
                             </>
                              )
 
