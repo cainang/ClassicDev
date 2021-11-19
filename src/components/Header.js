@@ -9,6 +9,7 @@ class Header extends React.PureComponent {
 
         let renderHeader =  (
                             <>
+                            <Link to="/" aria-label="back to home">
                                 <figure>
                                     <img 
                                         src={Logo} 
@@ -16,6 +17,7 @@ class Header extends React.PureComponent {
                                         className="block__header__logo" 
                                     />
                                 </figure>
+                            </Link>
                             </>
                              )
 
