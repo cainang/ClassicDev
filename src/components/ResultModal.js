@@ -79,7 +79,7 @@ const Create = ({ result,
                                       tabIndex="0"
                                       aria-label="Quiz result"
                                       aria-describedby="dialog1Desc">
-                                    <h2 >{result !== 0 || result > 5 ? "Parabéns 🎉" : "Sinto Muito 😢!!"}</h2>
+                                    <h2 >{result !== 0 ? "Parabéns 🎉" : "Sinto Muito 😢!!"}</h2>
                                     <h5 >Você Acertou</h5>
                                     <h1 >{result}/10</h1>
                                     <h5 style="margin-top: 10px;">Nos Avalie 😁: <a href="http://6003-2804-d4b-7ad2-5000-9ae7-43ff-fef4-e7a6.ngrok.io/" target="_blank">Feedback</a></h5>
