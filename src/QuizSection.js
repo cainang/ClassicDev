@@ -110,7 +110,7 @@ const QuizSection = ({category}) => {
 
         //let url = "https://opentdb.com/api.php?amount=10&category="+cat+"&difficulty=medium&type=multiple";
         var params = encodeURI(category)
-        let url = 'https://d1c0-104-196-56-105.ngrok.io/quests?dificudade=' + params;
+        let url = 'https://6003-2804-d4b-7ad2-5000-9ae7-43ff-fef4-e7a6.ngrok.io/quests?dificudade=' + params;
         let source = axios.CancelToken.source();
 
         axios.get(url)
