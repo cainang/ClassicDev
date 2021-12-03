@@ -82,7 +82,7 @@ const Create = ({ result,
                                     <h2 >{result >= 6 ? "Parabéns 🎉" : "Sinto Muito 😢!!"}</h2>
                                     <h5 >Você Acertou</h5>
                                     <h1 >{result}/10</h1>
-                                    <h5 style={{marginTop: '10px'}}>Nos Avalie 😁: <a href="http://6003-2804-d4b-7ad2-5000-9ae7-43ff-fef4-e7a6.ngrok.io/" rel="noopener noreferrer" target="_blank">Feedback</a></h5>
+                                    <h5 style={{marginTop: '10px'}}>Nos Avalie 😁: <a style={{textDecoration: 'none', color: '#123053'}} href="https://forms.gle/ekokeFG75fLhZKGk6" rel="noopener noreferrer" target="_blank">Feedback</a></h5>
                                     <span id="dialog1Desc" 
                                         role="textbox"
                                         
