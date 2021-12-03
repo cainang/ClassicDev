@@ -111,7 +111,7 @@ const QuizSection = ({category}) => {
         //let url = "https://opentdb.com/api.php?amount=10&category="+cat+"&difficulty=medium&type=multiple";
         
         var params = encodeURI(category)
-        let url = 'https://classicdev.loca.lt/quests/quests?dificudade=' + params;
+        let url = 'https://classicdev.loca.lt/quests?dificudade=' + params;
         let source = axios.CancelToken.source();
 
         axios.get(url)
